@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_website"
+        android:title="Upvote"
+        android:icon="@drawable/menu_website"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_upvote"
+        android:title="Upvote"
+        android:icon="@drawable/menu_upvote"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_downvote"
+        android:title="Upvote"
+        android:icon="@drawable/menu_upvote"
+        app:showAsAction="never" />
+</menu>

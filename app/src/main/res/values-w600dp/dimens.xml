@@ -1,0 +1,35 @@
+<resources>
+    <!-- Example customization of dimensions originally defined in res/values/dimens.xml
+         (such as screen margins) for screens with more than 820dp of available width. This
+         would include 7" and 10" devices in landscape (~960dp and ~1280dp respectively). -->
+    <dimen name="activity_horizontal_margin">64dp</dimen>
+    <dimen name="details_actions_height">56dp</dimen>
+    <dimen name="post_primary_txt_size">20sp</dimen>
+    <dimen name="post_secondary_txt_size">17sp</dimen>
+    <dimen name="post_flair_txt_size">13sp</dimen>
+    <dimen name="post_photo_width">144dp</dimen>
+    <dimen name="post_padding_bottom">14dp</dimen>
+    <dimen name="post_padding_top">10dp</dimen>
+    <dimen name="post_padding_horizontal">14dp</dimen>
+    <dimen name="post_margin_horizontal">11dp</dimen>
+    <dimen name="post_spacing">2dp</dimen>
+    <dimen name="post_title_margin_bottom">8dp</dimen>
+    <dimen name="post_title_margin_top">10dp</dimen>
+    <dimen name="posts_padding_bottom">8dp</dimen>
+    <dimen name="posts_padding_top">7dp</dimen>
+    <dimen name="post_gold_size">12dp</dimen>
+    <dimen name="post_gold_txt_margin">2dp</dimen>
+    <dimen name="comment_primary_txt_size">18sp</dimen>
+    <dimen name="comment_secondary_txt_size">15sp</dimen>
+    <dimen name="comment_flair_txt_size">13sp</dimen>
+    <dimen name="txt_extra_spacing">4sp</dimen>
+    <dimen name="comment_padding_bottom">14dp</dimen>
+    <dimen name="comment_padding_horizontal">15dp</dimen>
+    <dimen name="comment_padding_top">10dp</dimen>
+    <dimen name="comment_title_margin_top">6dp</dimen>
+    <dimen name="comment_score_margin_right">10dp</dimen>
+    <dimen name="details_comment_header_margin_horizontal">17dp</dimen>
+    <dimen name="comment_gold_size">11dp</dimen>
+    <dimen name="comment_gold_txt_margin">1.5dp</dimen>
+    <dimen name="gold_margin_right">10dp</dimen>
+</resources>

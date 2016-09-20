@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="posts_page_titles">
+        <item>Hot</item>
+        <item>Trending</item>
+        <item>Top</item>
+        <item>New</item>
+        <item>Controversial</item>
+        <item>Gilded</item>
+    </string-array>
+</resources>

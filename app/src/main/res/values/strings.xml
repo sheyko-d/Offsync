@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Offsync</string>
+    <string name="nsfw">NSFW</string>
+    <string name="google_api_key">AIzaSyC8t3GGEYz7vnhtQYFc2EnP4J8Cb9aPIvE</string>
+    <string name="reddit_key">pYeEIjdIsoaV_Q</string>
+    <string name="reddit_redirect_url">http://offsync.com</string>
+    <string name="imgur_client_id">7ce3462c9525b75</string>
+
+    <string name="posts_in">in</string>
+    <string name="posts_source">%1$s</string>
+    <string name="posts_info">%1$d comments</string>
+    <string name="posts_details">%1$d comments · %2$s · /u/%3$s</string>
+
+    <string name="comment_more">Show %1$d more</string>
+    <string name="comment_continue">Continue this thread</string>
+    <string name="comment_stickied">Stickied</string>
+    <string name="comment_source">· /u/%1$s · %2$s</string>
+    <string name="comment_source_score_hidden">/u/%1$s · %2$s</string>
+</resources>

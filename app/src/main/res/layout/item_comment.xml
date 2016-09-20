@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/comment_depth_margin_left"
+    android:layout_marginStart="@dimen/comment_depth_margin_left">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/comment_padding_bottom"
+        android:paddingLeft="@dimen/comment_padding_horizontal"
+        android:paddingRight="@dimen/comment_padding_horizontal"
+        android:paddingTop="@dimen/comment_padding_top">
+
+        <org.apmem.tools.layouts.FlowLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/comment_depth_width"
+            android:layout_marginStart="@dimen/comment_depth_width"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/comment_gilded_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="2.5dp"
+                android:layout_marginEnd="@dimen/gold_margin_right"
+                android:layout_marginRight="@dimen/gold_margin_right"
+                android:layout_marginTop="3dp"
+                android:layout_marginStart="1.5dp"
+                android:layout_marginLeft="1.5dp"
+                android:background="@drawable/gold_bg"
+                android:paddingBottom="2dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="1.5dp">
+
+                <ImageView
+                    android:layout_width="@dimen/comment_gold_size"
+                    android:layout_height="@dimen/comment_gold_size"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="@null"
+                    android:src="@drawable/gold" />
+
+                <TextView
+                    android:id="@+id/comment_gilded_txt"
+                    fontPath="fonts/Roboto-Bold.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/comment_gold_txt_margin"
+                    android:layout_marginStart="@dimen/comment_gold_txt_margin"
+                    android:layout_marginRight="0.6dp"
+                    android:layout_marginEnd="0.6dp"
+                    android:layout_marginTop="-0.5dp"
+                    android:layout_marginBottom="-1.25dp"
+                    android:includeFontPadding="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/comment_flair_txt_size"
+                    tools:ignore="MissingPrefix" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/comment_score_txt"
+                fontPath="fonts/Roboto-Medium.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="0.75dp"
+                android:layout_marginEnd="3.5dp"
+                android:layout_marginRight="3.5dp"
+                android:layout_marginTop="3dp"
+                android:includeFontPadding="false"
+                android:textColor="@color/secondary_text"
+                android:textSize="@dimen/comment_secondary_txt_size"
+                tools:ignore="MissingPrefix"
+                tools:text="6540" />
+
+            <TextView
+                android:id="@+id/comment_source_txt"
+                fontPath="fonts/Roboto-Regular.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="0.75dp"
+                android:layout_marginEnd="9dp"
+                android:layout_marginRight="9dp"
+                android:layout_marginTop="3dp"
+                android:includeFontPadding="false"
+                android:orientation="vertical"
+                android:textColor="@color/secondary_text"
+                android:textSize="@dimen/comment_secondary_txt_size"
+                tools:ignore="MissingPrefix"
+                tools:text="todayilearned" />
+
+            <TextView
+                android:id="@+id/comment_stickied_txt"
+                fontPath="fonts/Roboto-Medium.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="1.5dp"
+                android:background="@drawable/stickied_bg"
+                android:includeFontPadding="false"
+                android:orientation="vertical"
+                android:paddingBottom="0.75dp"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:paddingTop="0.75dp"
+                android:text="@string/comment_stickied"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/comment_flair_txt_size"
+                tools:ignore="MissingPrefix,SmallSp" />
+        </org.apmem.tools.layouts.FlowLayout>
+
+        <TextView
+            android:id="@+id/comment_body_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/comment_depth_width"
+            android:layout_marginStart="@dimen/comment_depth_width"
+            android:layout_marginTop="@dimen/comment_title_margin_top"
+            android:lineSpacingExtra="@dimen/txt_extra_spacing"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/comment_primary_txt_size" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_gravity="bottom"
+        android:background="@color/divider" />
+
+    <FrameLayout
+        android:id="@+id/comment_depth_view"
+        android:layout_width="@dimen/comment_depth_width"
+        android:layout_height="match_parent"
+        android:background="@color/primary" />
+</FrameLayout>

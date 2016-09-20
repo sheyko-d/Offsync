@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    tools:context=".postpreview.PostPreviewActivity">
+
+    <WebView
+        android:id="@+id/preview_web_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <VideoView
+        android:id="@+id/preview_video_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        tools:targetApi="lollipop" />
+
+    <FrameLayout
+        android:id="@+id/preview_youtube_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        tools:targetApi="lollipop" />
+
+    <ImageView
+        android:id="@+id/preview_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:contentDescription="@null"
+        android:visibility="gone"
+        tools:targetApi="lollipop" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/preview_album_pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:visibility="gone" />
+
+    <com.viewpagerindicator.CirclePageIndicator
+        android:id="@+id/preview_pager_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:background="@drawable/preview_top_gradient"
+        android:paddingBottom="10dp"
+        app:fillColor="#FFFFFF"
+        app:pageColor="#66FFFFFF"
+        app:strokeColor="#66FFFFFF"
+        android:paddingTop="6dp"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/preview_progress_bar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-7dp"
+        android:indeterminate="true"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/preview_top_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:background="@drawable/preview_top_gradient"
+        android:visibility="gone" />
+</FrameLayout>

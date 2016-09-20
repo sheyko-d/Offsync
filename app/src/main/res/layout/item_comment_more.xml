@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/comment_depth_margin_left"
+    android:layout_marginStart="@dimen/comment_depth_margin_left">
+
+    <TextView
+        android:id="@+id/comment_body_txt"
+        fontPath="fonts/Roboto-Medium.ttf"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginLeft="@dimen/comment_depth_width"
+        android:layout_marginStart="@dimen/comment_depth_width"
+        android:background="@android:color/white"
+        android:clickable="true"
+        android:foreground="?selectableItemBackground"
+        android:gravity="center_vertical"
+        android:includeFontPadding="false"
+        android:paddingLeft="@dimen/comment_padding_horizontal"
+        android:paddingRight="@dimen/comment_padding_horizontal"
+        android:textAllCaps="true"
+        android:textColor="@color/primary"
+        android:textSize="@dimen/comment_secondary_txt_size"
+        tools:ignore="MissingPrefix"
+        tools:text="Show 3 more" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_gravity="bottom"
+        android:background="@color/divider" />
+
+    <FrameLayout
+        android:id="@+id/comment_depth_view"
+        android:layout_width="@dimen/comment_depth_width"
+        android:layout_height="match_parent"
+        android:background="@color/primary" />
+</FrameLayout>

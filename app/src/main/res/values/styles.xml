@@ -1,0 +1,32 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme_Light" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="android:windowBackground">@color/background</item>
+        <item name="cardColor">@android:color/white</item>
+    </style>
+
+    <style name="AppTheme_Night" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/primary_night</item>
+        <item name="colorPrimaryDark">@color/primary_night_dark</item>
+        <item name="colorAccent">@color/accent_night</item>
+        <item name="android:windowBackground">@color/background_night</item>
+        <item name="cardColor">@color/card_background_night</item>
+    </style>
+
+    <style name="AppTheme_Preview" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/primary_night</item>
+        <item name="colorPrimaryDark">@color/primary_night_dark</item>
+        <item name="colorAccent">@android:color/white</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@color/fullscreen_bg</item>
+        <item name="android:statusBarColor" tools:targetApi="lollipop">#00000000</item>
+    </style>
+
+    <style name="AppTheme_TranslucentStatus" parent="AppTheme_Light">
+        <item name="android:statusBarColor" tools:targetApi="lollipop">#00000000</item>
+    </style>
+</resources>

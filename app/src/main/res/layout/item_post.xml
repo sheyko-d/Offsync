@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/post_margin_horizontal"
+    android:layout_marginRight="@dimen/post_margin_horizontal"
+    android:layout_marginTop="@dimen/post_spacing"
+    app:cardBackgroundColor="?cardColor"
+    app:cardElevation="1dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:id="@+id/post_content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:clickable="true"
+        android:foreground="?selectableItemBackground"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/post_padding_bottom"
+            android:paddingLeft="@dimen/post_padding_horizontal"
+            android:paddingRight="@dimen/post_padding_horizontal"
+            android:paddingTop="@dimen/post_padding_top">
+
+            <org.apmem.tools.layouts.FlowLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/post_gilded_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="2.5dp"
+                    android:layout_marginEnd="@dimen/gold_margin_right"
+                    android:layout_marginLeft="1.5dp"
+                    android:layout_marginRight="@dimen/gold_margin_right"
+                    android:layout_marginStart="1.5dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/gold_bg"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    android:paddingTop="1.5dp">
+
+                    <ImageView
+                        android:layout_width="@dimen/post_gold_size"
+                        android:layout_height="@dimen/post_gold_size"
+                        android:layout_gravity="center_vertical"
+                        android:contentDescription="@null"
+                        android:src="@drawable/gold" />
+
+                    <TextView
+                        android:id="@+id/post_gilded_txt"
+                        fontPath="fonts/Roboto-Bold.ttf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginBottom="-1.5dp"
+                        android:layout_marginEnd="0.6dp"
+                        android:layout_marginLeft="@dimen/post_gold_txt_margin"
+                        android:layout_marginRight="0.6dp"
+                        android:layout_marginStart="@dimen/post_gold_txt_margin"
+                        android:layout_marginTop="-0.5dp"
+                        android:includeFontPadding="false"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/post_flair_txt_size"
+                        tools:ignore="MissingPrefix" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/post_score_txt"
+                    fontPath="fonts/Roboto-Medium.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="3dp"
+                    android:includeFontPadding="false"
+                    android:orientation="vertical"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="@dimen/post_secondary_txt_size"
+                    tools:ignore="MissingPrefix"
+                    tools:text="6540" />
+
+                <TextView
+                    android:id="@+id/post_source_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="3dp"
+                    android:includeFontPadding="false"
+                    android:orientation="vertical"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="@dimen/post_secondary_txt_size"
+                    tools:ignore="MissingPrefix"
+                    tools:text="todayilearned" />
+            </org.apmem.tools.layouts.FlowLayout>
+
+            <TextView
+                android:id="@+id/post_title_txt"
+                fontPath="fonts/Roboto-Medium.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/post_title_margin_bottom"
+                android:layout_marginTop="@dimen/post_title_margin_top"
+                android:includeFontPadding="false"
+                android:lineSpacingExtra="@dimen/txt_extra_spacing"
+                android:orientation="vertical"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/post_primary_txt_size"
+                tools:ignore="MissingPrefix"
+                tools:text="TIL in 2008, 9-year-old Nathan Thomson was stabbed in the face as he fought an armed intruder who tried to kill his mother, who was stabbed 8 times. After saving his mother from the slasher, he has been recommended for a bravery award by one of Scotland's senior law officers for his heroic act." />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <org.apmem.tools.layouts.FlowLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:gravity="bottom">
+
+                    <TextView
+                        android:id="@+id/post_nsfw_txt"
+                        fontPath="fonts/Roboto-Medium.ttf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginEnd="9dp"
+                        android:layout_marginRight="9dp"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/nsfw_bg"
+                        android:includeFontPadding="false"
+                        android:orientation="vertical"
+                        android:paddingBottom="0.75dp"
+                        android:paddingLeft="3dp"
+                        android:paddingRight="3dp"
+                        android:paddingTop="0.75dp"
+                        android:text="@string/nsfw"
+                        android:textAllCaps="true"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/post_flair_txt_size"
+                        tools:ignore="MissingPrefix,SmallSp" />
+
+                    <TextView
+                        android:id="@+id/post_flair_txt"
+                        fontPath="fonts/Roboto-Medium.ttf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginEnd="9dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="9dp"
+                        android:layout_marginStart="1dp"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/flair_bg"
+                        android:includeFontPadding="false"
+                        android:orientation="vertical"
+                        android:paddingBottom="0.75dp"
+                        android:paddingLeft="3dp"
+                        android:paddingRight="3dp"
+                        android:paddingTop="0.75dp"
+                        android:textColor="@color/flair_txt"
+                        android:textSize="@dimen/post_flair_txt_size"
+                        tools:ignore="MissingPrefix,SmallSp"
+                        tools:text="OG" />
+
+                    <TextView
+                        android:id="@+id/post_comments_txt"
+                        fontPath="fonts/Roboto-Regular.ttf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="-0.5dp"
+                        android:layout_marginStart="-0.5dp"
+                        android:layout_marginTop="3dp"
+                        android:includeFontPadding="false"
+                        android:lineSpacingExtra="2dp"
+                        android:orientation="vertical"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="@dimen/post_secondary_txt_size"
+                        tools:ignore="MissingPrefix"
+                        tools:text="820 comments · imgur" />
+                </org.apmem.tools.layouts.FlowLayout>
+
+                <ImageView
+                    android:id="@+id/post_downloaded_img"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_gravity="bottom|end"
+                    android:layout_marginBottom="2.5dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/download" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/post_type_img"
+                android:layout_width="18dp"
+                android:layout_height="12dp"
+                android:layout_gravity="bottom|end"
+                android:background="@drawable/type_slideshow_bg"
+                android:contentDescription="@null"
+                android:paddingBottom="0.5dp"
+                android:paddingLeft="1dp"
+                android:paddingRight="1dp"
+                android:paddingTop="0.5dp"
+                android:src="@drawable/type_slideshow" />
+
+            <ImageView
+                android:id="@+id/post_img"
+                android:layout_width="@dimen/post_photo_width"
+                android:layout_height="match_parent"
+                android:layout_gravity="top"
+                android:background="@color/photo_placeholder"
+                android:clickable="true"
+                android:contentDescription="@null"
+                android:foreground="?selectableItemBackground"
+                android:scaleType="centerCrop"
+                tools:targetApi="lollipop" />
+        </FrameLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

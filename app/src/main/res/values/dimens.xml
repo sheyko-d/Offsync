@@ -1,0 +1,36 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="details_actions_height">42dp</dimen>
+    <dimen name="post_primary_txt_size">16sp</dimen>
+    <dimen name="post_secondary_txt_size">14sp</dimen>
+    <dimen name="post_flair_txt_size">9.5sp</dimen>
+    <dimen name="post_photo_width">116dp</dimen>
+    <dimen name="post_padding_bottom">11dp</dimen>
+    <dimen name="post_padding_top">8dp</dimen>
+    <dimen name="post_padding_horizontal">10dp</dimen>
+    <dimen name="post_margin_horizontal">6dp</dimen>
+    <dimen name="post_spacing">0dp</dimen>
+    <dimen name="post_title_margin_bottom">4dp</dimen>
+    <dimen name="post_title_margin_top">6dp</dimen>
+    <dimen name="posts_padding_bottom">10dp</dimen>
+    <dimen name="posts_padding_top">6dp</dimen>
+    <dimen name="post_gold_size">9.5dp</dimen>
+    <dimen name="post_gold_txt_margin">1dp</dimen>
+    <dimen name="comment_primary_txt_size">15sp</dimen>
+    <dimen name="comment_secondary_txt_size">13sp</dimen>
+    <dimen name="comment_flair_txt_size">9sp</dimen>
+    <dimen name="txt_extra_spacing">2sp</dimen>
+    <dimen name="comment_padding_bottom">11dp</dimen>
+    <dimen name="comment_padding_horizontal">10dp</dimen>
+    <dimen name="comment_padding_top">7dp</dimen>
+    <dimen name="comment_title_margin_top">3dp</dimen>
+    <dimen name="comment_score_margin_right">8dp</dimen>
+    <dimen name="details_comment_header_margin_horizontal">9dp</dimen>
+    <dimen name="comment_depth_width">3dp</dimen>
+    <dimen name="comment_depth_margin_left">-4dp</dimen>
+    <dimen name="comment_gold_size">9dp</dimen>
+    <dimen name="comment_gold_txt_margin">1dp</dimen>
+    <dimen name="gold_margin_right">10dp</dimen>
+</resources>
